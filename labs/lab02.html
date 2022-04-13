@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style type="text/css">
+	#t1{
+		/*css 注释 要先有这个,表格才能分开*/
+		border-collapse: separate;
+		border-style: solid;
+		border-spacing: 0rem;
+		border-width: 3px;
+		margin:auto ;
+		border-color: red;
+		border-radius: 5px;
+		
+		
+	}
+	
+	#t1 th{
+		border-style: hidden;
+		padding:2px;
+		border-width: 0.0625rem;
+		border-color: #808080;
+		text-align: center;
+		
+	}
+	
+	#t1 tr:hover td{ border-top-width: 3px;
+		border-bottom-width: 3px; padding-top: 2px; padding-bottom: 2px;}
+		
+	#t1 td{
+		border-style: solid;
+		border-left-style: hidden;
+		border-right-style: hidden;
+		border-top-width: 2px;
+		border-bottom-width: 2px;
+		margin: 0px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding: 2px;
+		border-color: #808080;
+		
+		
+		
+	}
+	
+	.r1{
+		background-color: black;
+		color: white;
+		text-align: center;
+	}
+	
+	.c2{
+		background-color: white;
+		text-align: left;
+	}
+	.c3{
+		background-color: gold;
+		text-align: center;
+		color: #000000;
+	}
+	.c4{
+		background-color: silver;
+		text-align: center;
+		color: #000000;
+	}
+	.c5{
+		background-color: lightcoral;
+		text-align: center;
+		color: #000000;
+	}
+	.c6{
+		background-color: green;
+		text-align: center;
+		color: #000000;
+	}
+	     #t1 tr th:first-child,#t1 tr td:first-child {/*设置table左边边框*/
+	           border-left: 10px; /* border-radius: 10px; */
+	        }
+	        #t1 tr th:last-child,#t1 tr td:last-child {/*设置table右边边框*/
+	           border-right: 10px ; 
+	        }
+			
+</style>
+<body>
+
+<table id="t1">
+	<caption style="text-align: center;"> 2022 Winter Paralympics medal table</caption>	
+	<thead>
+		<tr>
+			<th class="r1">rank</th>
+			<th class="c2">country</th>
+			<th class="c3">gold</th>
+			<th class="c4">sliver</th>
+			<th class="c5">bronze</th>
+			<th class="c6">toal</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="r1">1</td>
+			<td class="c2">China</td>
+			<td class="c3">18</td>
+			<td class="c4">20</td>
+			<td class="c5">23</td>
+			<td class="c6">61</td>
+		</tr>
+		<tr>
+			<td class="r1">2</td>
+			<td class="c2">Ukraine</td>
+			<td class="c3">11</td>
+			<td class="c4">10</td>
+			<td class="c5">8</td>
+			<td class="c6">29</td>
+		</tr>
+		<tr>
+			<td class="r1">3</td>
+			<td class="c2">Canada</td>
+			<td class="c3">8</td>
+			<td class="c4">6</td>
+			<td class="c5">11</td>
+			<td class="c6">25</td>
+		</tr>
+		<tr>
+			<td class="r1">4</td>
+			<td class="c2">France</td>
+			<td class="c3">7</td>
+			<td class="c4">3</td>
+			<td class="c5">2</td>
+			<td class="c6">12</td>
+		</tr>
+		<tr>
+			<td class="r1">5</td>
+			<td class="c2">United States</td>
+			<td class="c3">6</td>
+			<td class="c4">11</td>
+			<td class="c5">3</td>
+			<td class="c6">20</td>
+		</tr>
+		<tr>
+			<td class="r1">6</td>
+			<td class="c2"> Austria</td>
+			<td class="c3"> 5</td>
+			<td class="c4">5</td>
+			<td class="c5">3</td>
+			<td class="c6">13</td>
+		</tr>
+		<tr>
+			<td class="r1">7</td>
+			<td class="c2">Germany</td>
+			<td class="c3">4</td>
+			<td class="c4">8</td>
+			<td class="c5">7</td>
+			<td class="c6">19</td>
+		</tr>
+		<tr>
+			<td class="r1">8</td>
+			<td class="c2"> Norway</td>
+			<td class="c3">4</td>
+			<td class="c4">2</td>
+			<td class="c5">1</td>
+			<td class="c6">7</td>
+		</tr>
+		<tr>
+			<td class="r1">9</td>
+			<td class="c2">Japan</td>
+			<td class="c3">4</td>
+			<td class="c4">1</td>
+			<td class="c5">2</td>
+			<td class="c6">7</td>
+		</tr>
+		<tr>
+			<td class="r1">10</td>
+			<td class="c2">Slovakia</td>
+			<td class="c3">3</td>
+			<td class="c4">0</td>
+			<td class="c5">3</td>
+			<td class="c6">6</td>
+		</tr>
+		<tr>
+			<td class="r1">11</td>
+			<td class="c2"> Italy</td>
+			<td class="c3">2</td>
+			<td class="c4">3</td>
+			<td class="c5">2</td>
+			<td class="c6">7</td>
+		</tr>
+		<tr>
+			<td class="r1">12</td>
+			<td class="c2">Sweden</td>
+			<td class="c3">2</td>
+			<td class="c4">2</td>
+			<td class="c5">3</td>
+			<td class="c6">7</td>
+		</tr>
+		<tr>
+					<td class="r1">13</td>
+					<td class="c2">Finland</td>
+					<td class="c3">2</td>
+					<td class="c4">2</td>
+					<td class="c5">0</td>
+					<td class="c6">4</td>
+		</tr>
+		<tr>
+					<td class="r1">14</td>
+					<td class="c2">Great Britain</td>
+					<td class="c3">1</td>
+					<td class="c4">1</td>
+					<td class="c5"> 4</td>
+					<td class="c6">6</td>
+		</tr>
+		<tr>
+					<td class="r1">15</td>
+					<td class="c2">New Zealand</td>
+					<td class="c3">1</td>
+					<td class="c4">1</td>
+					<td class="c5">2</td>
+					<td class="c6">4</td>
+		</tr>
+		<tr>
+					<td class="r1">16</td>
+					<td class="c2">Netherlands</td>
+					<td class="c3">0</td>
+					<td class="c4">3</td>
+					<td class="c5">1</td>
+					<td class="c6">4</td>
+		</tr>
+		<tr>
+					<td class="r1" rowspan="3">17</td>
+					<td class="c2"> &#127462&#127482 Australia</td>
+					<td class="c3">0</td>
+					<td class="c4">0</td>
+					<td class="c5">1</td>
+					<td class="c6">1</td>
+		</tr>
+		<tr>
+					
+					<td class="c2">Kazakhstan</td>
+					<td class="c3">0</td>
+					<td class="c4">0</td>
+					<td class="c5">1</td>
+					<td class="c6">1</td>
+		</tr>
+		<tr>
+					
+					<td class="c2">Switzerland</td>
+					<td class="c3">0</td>
+					<td class="c4">0</td>
+					<td class="c5">1</td>
+					<td class="c6">1</td>
+		</tr>
+		
+	</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table table-striped">
+  <caption>条纹表格布局</caption>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>城市</th>
+      <th>邮编</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tanmay</td>
+      <td>Bangalore</td>	
+      <td>560001</td>
+    </tr>
+    <tr>
+      <td>Sachin</td>
+      <td>Mumbai</td>
+      <td>400003</td>
+    </tr>
+    <tr>
+      <td>Uma</td>
+      <td>Pune</td>
+      <td>411027</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

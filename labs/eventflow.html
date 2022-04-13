@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<script type="text/javascript">
+		
+		window.onload=function(){
+			window.status="haha"
+			
+			var out=document.getElementById("out")
+			var middle=document.getElementById("middle")
+			var inner=document.getElementById("inner")
+			out.addEventListener("click",function(){alert("out")},true)
+			inner.addEventListener("click",function(){alert("inner1")},false)
+			inner.addEventListener("click",function(){alert("inner2")},false)
+			middle.addEventListener("click",function(){alert("middle")},false)
+			//对一个元素定义两个事件的话，是个队列，先进先出。所以先定义的会先显示
+			
+		}
+			
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<span id="out">
+			最外面
+			<span id="middle">
+				最中间
+				<span id="inner">
+					最里面
+				</span>
+			</span>
+		</span>
+		
+		
+		
+	</body>
+</html>

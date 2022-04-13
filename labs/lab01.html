@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="En">
+	<head>
+		<meta charset="utf-8">
+		<title>Student HomePage lab01</title>
+		<style>
+		table{
+			
+			border-collapse:collapse; /* 有了这个下面的spacing 不起作用，cellspacing 之间会一直是0； */
+			border-spacing: 10px;  /* 取消了上面一行后，可用这个调整单元格之间的距离 */
+			border-style: solid;
+			border-color: gray;
+			
+		}
+		th,td{
+			padding: 0.5rem;
+			border-style: solid;
+			border-color: lightgray;
+			border-width: thin;
+			
+			
+		}
+		
+		</style>
+		
+	</head>
+	<body>
+		welcome to my homePage!<p></p>
+		<img src="../img/img_chania.jpg" alt="welcome to my homePage"/>
+		<ul >
+			<li>CITS 3403</li>
+			<li>CITS 3002</li>
+			<li>CITS 3401</li>
+			<li>STAT 2401</li>
+		</ul>
+		<table >
+			
+			<caption>TimeTable</caption>
+			
+			<thead><tr>
+				<th>Time interval</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			</tr></thead>
+			<tbody>
+			<tr>
+				<td>8:00-10:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td style="background-color: darkgoldenrod;">CITS 3002 lab01</td>
+				<td style="background-color: cornflowerblue;">CITS 3403 WORKSHOP</td>
+			</tr>
+			<tr>
+				<td>10:00-12:00</td>
+				<td></td>
+				<td></td>
+				<td style="background-color: darkgoldenrod">CITS 3002 lecture</td>
+				<td></td>
+				<td></td>
+				
+			</tr>
+			<tr>
+				<td>12:00-14:00</td>
+				<td></td>
+				<td></td>
+				<td style="background-color: pink">CITS 3401 lecture</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>14:00-16:00</td>
+				<td></td>
+				<td style="background-color:cornflowerblue ;">CITS 3403 Lab01</td>
+				<td >
+				<span style="background-color: red;border-style: dashed; border-color: black;">CITS 3403 lecture</span>
+				<span style="background-color: red;border-style: dashed; border-color: black;">STATS 2401 LAB</span>
+				</td>
+				<td style="background-color:pink;">CITS 3401 LAB01</td>
+				<td></td>
+			</tr>
+			<tr>	
+				<td>16:00-18:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			</tbody>
+		</table>
+		
+	</body>
+</html>
